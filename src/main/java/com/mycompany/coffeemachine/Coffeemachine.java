@@ -17,7 +17,7 @@ public class Coffeemachine {
         
         System.out.println ("Write how many cups of coffee you will need:");
         int count = scan.nextInt();
-        int one_water = 200; 
+        int one_water = 100; 
         int one_milk = 50;
         int one_bean = 15; 
         System.out.println ("For " + count +" cups of coffee you will need:");
