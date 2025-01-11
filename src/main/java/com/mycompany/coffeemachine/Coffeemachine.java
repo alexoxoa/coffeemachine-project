@@ -4,28 +4,27 @@
 
 package com.mycompany.coffeemachine;
 import java.util.Scanner;
-
+import java.util.Locale;
 /**
  *
  * @author Александра
  */
 
 public class Coffeemachine {
+    
+
   
     public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+        Scanner scanner = new Scanner(System.in);
+        int first = scanner.nextInt();
+        int second = scanner.nextInt(); 
+        int third = scanner.nextInt(); 
+
+        System.out.println((((first+second) == 20) || ((first + third) == 20) || ((third + second == 20))));
+        scanner.close();
         
-        System.out.println ("Write how many cups of coffee you will need:");
-        int count = scan.nextInt();
-        int one_water = 200; 
-        int one_milk = 50;
-        int one_bean = 15; 
-        System.out.println ("For " + count +" cups of coffee you will need:");
         
-        System.out.println (count*one_water +" ml of water");
-        System.out.println (count*one_milk +" ml of milk");
-        System.out.println (count*one_bean +" g of coffee beans");
-        scan.close();
+        
         
  
 
